@@ -6,7 +6,8 @@ app=Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({"message":"running status 200"}),200
-@app.route("/about")
+
+@app.route("/about",methods=['GET'])
 def home():
     return jsonify({"message":"about hello hellol"}),200
 
